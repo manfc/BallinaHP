@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>お問合せ</title>
+	<link rel="stylesheet" href="static/cms/design_tpl/3/design.css" type="text/css" charset="UTF-8">
+	<script language="JavaScript" type="text/javascript" src="static/cms/design_tpl/3/design.js"
+		charset="UTF-8"></script>
+	<!--[if IE]><link rel="stylesheet" href="static/cms/design_tpl/3/style/ms_ie.css" type="text/css" charset="UTF-8"><![endif]-->
+	<script language="JavaScript" type="text/javascript">
+< !--
+			_imgURL = "images/cms/";
+		_designURL = "static/cms/design_tpl/3/";
+		_UA_SMD_REGEXP = /(iPhone|iPod|Android.*Mobile|Windows.*Phone|BlackBerry)/i;
+	// -->
+	</script>
+	<script language="JavaScript" type="text/javascript" src="static/cms/js/common.js" charset="UTF-8"></script>
+	<script language="JavaScript" type="text/javascript" src="static/cms/js/controller.js" charset="UTF-8"></script>
+	<script language="JavaScript" type="text/javascript" src="static/cms/js/ajax.js" charset="UTF-8"></script>
+	<script language="JavaScript" type="text/javascript" src="static/cms/js/form.js" charset="UTF-8"></script>
+	<script language="JavaScript" type="text/javascript">
+< !--
+			window.onload = onloadProc;
+		function onloadProc() {
+			__cmsController = "script/cms/top.php";
+			_eazyInputCount = 9;
+			_questionCount = 0;
+			onloadFormProc();
+
+			if (navigator.appVersion.indexOf("MSIE 10") != -1) {
+				var msieCss = document.createElement("link");
+				msieCss.href = "static/cms/design_tpl/3/style/ms_ie.css";
+				msieCss.rel = "stylesheet";
+				msieCss.type = "text/css";
+				msieCss.charset = "UTF-8";
+				document.getElementsByTagName('head')[0].appendChild(msieCss);
+			}
+		}
+
+		function validate() {
+			if (!checkInputValue("e1", "お名前", 50, true)) return false;
+			if (!checkInputValue("e2", "会社名", 50, false)) return false;
+			if (!checkInputValue("e3", "郵便番号", 10, true)) return false;
+			if (!checkInputValue("e4", "住所", 100, true)) return false;
+			if (!checkInputValue("e5", "電話番号", 20, false)) return false;
+			if (!checkInputValue("e6", "FAX", 20, false)) return false;
+			if (!checkInputValue("e7", "メールアドレス", 256, true)) return false;
+			if (!checkInputValue("e8", "お問合せ内容", 4000, true)) return false;
+			if (!checkInputValue("e9", "備考", 4000, false)) return false;
+
+			return true;
+		}
+// -->
+	</script>
+
+</head>
+
+<body>
+	<div class="dt_container">
+		<div class="dt_headerZone">
+			<div class="dt_headerBox">
+
+
+				<div id="dt_area_header">
+					<div class="dt_headerStr">
+						<h1>バリナ株式会社</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dt_mainZone">
+			<div class="dt_menuBox">
+				<div id="dt_area_menu">
+					<a href="http://www.ballina.co.jp/index.html" class="dt_normalMenu">トップページ</a><a
+						href="http://www.ballina.co.jp/organization.html" class="dt_normalMenu">組織概要</a><a
+						href="http://www.ballina.co.jp/business.html" class="dt_normalMenu">事業内容</a><a
+						href="https://ssl.alpha-prm.jp/ballina.co.jp/contact.html" class="dt_activeMenu">お問合せ</a>
+				</div>
+				<div id="dt_area_banner_menu">
+					<!--@banner_menu@-->
+				</div>
+			</div>
+			<div class="dt_contentBox">
+				<div id="dt_area_content">
+					<form name="operateForm" id="_cms_form_" class="cmsForm" method="post" action="script/cms/top.php"
+						onsubmit="return false;">
+						<h1 class="dt_headLine">お問合せ</h1>製品やサービスに関するお問合せは、こちらからお願いいたします。<br><br><span
+							class="cautionFont">半角カタカナはご使用にならないでください。</span><br><span class="cautionFont"><span
+								class="cautionSymbolColor">※</span>は必須項目です。</span><br><br>
+						<table class="formTable">
+							<col class="formRowHeader">
+							<col>
+							<tr>
+								<th class="formRowHeader">お名前<span class="cautionFont cautionSymbolColor">※</span></th>
+								<td><input type="text" name="e1" id="e1" class="formInput halfWidth required-field">
+								</td>
+							</tr>
+							<tr>
+								<th class="formRowHeader">会社名</th>
+								<td><input type="text" name="e2" id="e2" class="formInput fullWidth"></td>
+							</tr>
+							<tr>
+								<th class="formRowHeader">郵便番号<span class="cautionFont cautionSymbolColor">※</span></th>
+								<td><input type="text" name="e3" id="e3"
+										class="formInput aThirdWidth imeDisabled required-field"><span
+										class="cautionFont">&nbsp;※半角入力</span></td>
+							</tr>
+							<tr>
+								<th class="formRowHeader">住所<span class="cautionFont cautionSymbolColor">※</span></th>
+								<td><textarea name="e4" id="e4"
+										class="formTextContents fullWidth mediumHeight required-field"></textarea></td>
+							</tr>
+							<tr>
+								<th class="formRowHeader">電話番号</th>
+								<td><input type="text" name="e5" id="e5" class="formInput halfWidth imeDisabled"><span
+										class="cautionFont">&nbsp;※半角入力</span></td>
+							</tr>
+							<tr>
+								<th class="formRowHeader">FAX</th>
+								<td><input type="text" name="e6" id="e6" class="formInput halfWidth imeDisabled"><span
+										class="cautionFont">&nbsp;※半角入力</span></td>
+							</tr>
+							<tr>
+								<th class="formRowHeader">メールアドレス<span class="cautionFont cautionSymbolColor">※</span>
+								</th>
+								<td><input type="text" name="e7" id="e7"
+										class="formInput twoThirdsWidth imeDisabled required-field"><span
+										class="cautionFont">&nbsp;※半角入力</span></td>
+							</tr>
+							<tr>
+								<th class="formRowHeader">お問合せ内容<span class="cautionFont cautionSymbolColor">※</span>
+								</th>
+								<td><textarea name="e8" id="e8"
+										class="formTextContents fullWidth mediumHeight required-field"></textarea></td>
+							</tr>
+							<tr>
+								<th class="formRowHeader">備考</th>
+								<td><textarea name="e9" id="e9"
+										class="formTextContents fullWidth mediumHeight"></textarea></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									ご入力いただきました個人情報は、お問合せ内容に関する対応のため弊社担当よりご連絡させていただく場合にのみ使用し、その他の目的には一切使用いたしません。</td>
+							</tr>
+						</table>
+						<table class="buttonLayoutTable">
+							<tr>
+								<td><input type="button" class="formButton" value="リセット" onclick="resetForm();"><input
+										type="button" class="formButton" value="&nbsp;&nbsp;次へ&nbsp;&nbsp;"
+										onclick="nextForm();"></td>
+							</tr>
+						</table><input type="hidden" name="_cms_forward_" value="" id="_cms_forward_"><input
+							type="hidden" name="pageId" value="WF577a61cf60748" id="pageId"><input type="hidden"
+							name="domain" value="ballina.co.jp" id="domain">
+					</form>
+				</div>
+			</div>
+			<div class="dt_mainBottom"></div>
+		</div>
+		<div class="dt_footerZone">
+			<div class="dt_footerBox">
+				<div class="dt_siteMapLink">
+					<a href="http://www.ballina.co.jp/_site_map_.html">サイトマップ</a>
+
+				</div>
+				<div id="dt_area_footer">
+					<div class="dt_footerStr">Copyright 2016 2020 Ballina Co.,Ltd All Rights Reserved.</div>
+				</div>
+			</div>
+			<div class="dt_footerBanner">
+				<!--@banner_footer@-->
+			</div>
+		</div>
+	</div>
+	<div class="dt_footerBottom"></div>
+	<div id="magnifyImgBackground" style="display: none;">&nbsp;</div>
+	<div id="magnifyImgBox" style="display: none;">
+		<div id="magnifyImgCloseBtn" title="閉じる" onclick="magnifyImgOff();"></div>
+		<div id="magnifyImgFrame">
+			<img id="magnifyImg" src="static/cms/design_tpl/3/images/wait.gif">
+		</div>
+	</div>
+</body>
+
+</html>
