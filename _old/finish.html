@@ -31,7 +31,7 @@
 <ul>
 <li><a href="index2.html">ホーム<span>HOME</span></a></li>
 <li><a href="company.html">会社概要<span>COMPANY</span></a></li>
-<li><a href="service.html">サービス<span>SERVICE</span></a></li>
+<li><a href="service.html">事業内容<span>BUSINESS</span></a></li>
 <li><a href="recruit.html">採用情報<span>RECRIT</span></a></li>
 <li><a href="link.html">リンク<span>LINK</span></a></li>
 <li class="current"><a href="contact2.html">お問い合わせ<span>CONTACT</span></a></li>
@@ -42,7 +42,7 @@
 <ul>
 <li><a href="index2.html">ホーム<span>HOME</span></a></li>
 <li><a href="company.html">会社概要<span>COMPANY</span></a></li>
-<li><a href="service.html">サービス<span>SERVICE</span></a></li>
+<li><a href="service.html">事業内容<span>BUSINESS</span></a></li>
 <li><a href="recruit.html">採用情報<span>RECRIT</span></a></li>
 <li><a href="link.html">リンク<span>LINK</span></a></li>
 <li class="current"><a href="contact2.html">お問い合わせ<span>CONTACT</span></a></li>
@@ -55,42 +55,13 @@
 
 <section>
 
-<h2>確認画面</h2>
+<h2>送信完了</h2>
 
 <!-- フォームの情報はここからです -->
 <form name="form1" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER["REQUEST_URI"];?>">
-<input type="hidden" name="mode" value="confirm">
-<table class="ta1">
-<!--<tr><td colspan="2" class="auto"><strong>確認画面</strong></td></tr>-->
-<!-- 入力／確認 -->
-<!--<tr><th class="tamidashi" colspan="2">お問い合わせフォーム</th></tr>-->
-<tr>
-<th width="150">お名前<span style="color:red">※</span></th>
-<td>
-<input type="hidden" name="item1" value="<?php echo $form["item1"];?>">
-<?php echo $form["item1"];?>
-</td>
-</tr>
-<tr>
-<th width="150">メールアドレス<span style="color:red">※</span></th>
-<td>
-<input type="hidden" name="item2" value="<?php echo $form["item2"];?>">
-<?php echo $form["item2"];?>
-</td>
-</tr>
-<tr>
-<th>お問い合わせ内容<span style="color:red">※</span></th>
-<td>
-<input type="hidden" name="item3" value="<?php echo $form["item3"]; ?>">
-<?php echo nl2br($form["item3"]);?>
-</td>
-</tr>
-</table>
-<div class="c">
-<input type="submit" value="送信する" class="btn">
-&nbsp;
-<input type="button" value="戻る" onClick="document.form1.mode.value='reinput';document.form1.submit()" class="btn">
-</div>
+<input type="hidden" name="mode" value="finish" />
+<!-- 処理終了 -->
+<p class="c">送信が完了しました。</p>
 </form>
 <!-- フォームの情報はここまでです -->
 

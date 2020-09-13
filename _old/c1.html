@@ -18,7 +18,7 @@
 <![endif]-->
 </head>
 
-<body>
+<body class="c1">
 
 <div id="container">
 
@@ -31,9 +31,9 @@
 <ul>
 <li><a href="index2.html">ホーム<span>HOME</span></a></li>
 <li><a href="company.html">会社概要<span>COMPANY</span></a></li>
-<li><a href="service.html">サービス<span>SERVICE</span></a></li>
+<li><a href="service.html">事業内容<span>BUSINESS</span></a></li>
 <li><a href="recruit.html">採用情報<span>RECRIT</span></a></li>
-<li class="current"><a href="link.html">リンク<span>LINK</span></a></li>
+<li><a href="link.html">リンク<span>LINK</span></a></li>
 <li><a href="contact2.html">お問い合わせ<span>CONTACT</span></a></li>
 </ul>
 </nav>
@@ -42,65 +42,92 @@
 <ul>
 <li><a href="index2.html">ホーム<span>HOME</span></a></li>
 <li><a href="company.html">会社概要<span>COMPANY</span></a></li>
-<li><a href="service.html">サービス<span>SERVICE</span></a></li>
+<li><a href="service.html">事業内容<span>BUSINESS</span></a></li>
 <li><a href="recruit.html">採用情報<span>RECRIT</span></a></li>
-<li class="current"><a href="link.html">リンク<span>LINK</span></a></li>
+<li><a href="link.html">リンク<span>LINK</span></a></li>
 <li><a href="contact2.html">お問い合わせ<span>CONTACT</span></a></li>
 </ul>
 </nav>
+
+<!--スライドショー-->
+<aside id="mainimg">
+<img src="images/1.jpg" alt="" class="slide0">
+<img src="images/1.jpg" alt="" class="slide1">
+<img src="images/2.jpg" alt="" class="slide2">
+<img src="images/3.jpg" alt="" class="slide3">
+</aside>
 
 <div id="contents">
 
 <div id="main">
 
 <section>
+<h2>１カラムサンプル</h2>
+<p>&lt;body&gt;を&lt;body <span class="color1">class=&quot;c1&quot;</span>&gt;にするとこのページのように１カラムになります。html側にsubコンテンツは残っているので、完全に１カラムで使う場合はhtml側からsubブロックごと削除しておく事をおすすめします。</p>
+</section>
 
-<h2>リンク</h2>
-<p>リンクのご案内。</p>
+<section id="new">
+<h2>更新情報・お知らせ</h2>
+<dl>
+<dt>20XX/00/00</dt>
+<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+<dt>20XX/00/00</dt>
+<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+<dt>20XX/00/00</dt>
+<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+<dt>20XX/00/00</dt>
+<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+<dt>20XX/00/00</dt>
+<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+<dt>20XX/00/00</dt>
+<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+</dl>
+<p class="r">&raquo;&nbsp;<a href="#">過去ログ</a></p>
+</section>
 
-<table class="ta1">
-<tr>
-<th colspan="2" class="tamidashi">見出しが必要であればここを使います</th>
-</tr>
-<tr>
-<th><a href="#">サイト名</a></th>
-<td>ここに説明など入れて下さい。サンプルテキスト。</td>
-</tr>
-<tr>
-<th><a href="#">サイト名</a></th>
-<td>ここに説明など入れて下さい。サンプルテキスト。</td>
-</tr>
-<tr>
-<th><a href="#">サイト名</a></th>
-<td>ここに説明など入れて下さい。サンプルテキスト。</td>
-</tr>
-<tr>
-<th><a href="#">サイト名</a></th>
-<td>ここに説明など入れて下さい。サンプルテキスト。</td>
-</tr>
-<tr>
-<th><a href="#">サイト名</a></th>
-<td>ここに説明など入れて下さい。サンプルテキスト。</td>
-</tr>
-<tr>
-<th><a href="#">サイト名</a></th>
-<td>ここに説明など入れて下さい。サンプルテキスト。</td>
-</tr>
-<tr>
-<th><a href="#">サイト名</a></th>
-<td>ここに説明など入れて下さい。サンプルテキスト。</td>
-</tr>
-<tr>
-<th><a href="#">サイト名</a></th>
-<td>ここに説明など入れて下さい。サンプルテキスト。</td>
-</tr>
-</table>
+<section>
+
+<h2>サービスのご案内</h2>
+
+<p>リンク設定がされている場合、画像右上に「→」マークが出ます。設定はcssフォルダのstyle.cssの<br>
+/*ボックスにリンク指定がされた場合に出る「→」マーク*/<br>
+ブロックになります。</p>
+
+<div class="list">
+<a href="item.html">
+<img src="images/sample1.jpg" alt="" class="img">
+<h4>Sample Title</h4>
+<p>ここに説明など入れて下さい。</p>
+</a>
+</div>
+
+<div class="list">
+<a href="item.html">
+<img src="images/sample1.jpg" alt="" class="img">
+<h4>Sample Title</h4>
+<p>ここに説明など入れて下さい。ここに説明など入れて下さい。ここに説明など入れて下さい。ここに説明など入れて下さい。ここに説明など入れて下さい。ここに説明など入れて下さい。ここに説明など入れて下さい。ここに説明など入れて下さい。ここに説明など入れて下さい。ここに説明など入れて下さい。ここに説明など入れて下さい。ここに説明など入れて下さい。ここに説明など入れて下さい。ここに説明など入れて下さい。ここに説明など入れて下さい。ここに説明など入れて下さい。ここに説明など入れて下さい。ここに説明など入れて下さい。ここに説明など入れて下さい。ここに説明など入れて下さい。</p>
+</a>
+</div>
+
+<div class="list">
+<a href="item.html">
+<img src="images/sample2.jpg" alt="" class="img">
+<h4>Sample Title</h4>
+<p>ここに説明など入れて下さい。</p>
+</a>
+</div>
+
+<div class="list">
+<img src="images/sample3.jpg" alt="" class="img">
+<h4>Sample Title</h4>
+<p>リンク設定なしのサンプルです。</p>
+</div>
 
 </section>
 
 </div>
 <!--/main-->
-<!--
+
 <div id="sub">
 
 <nav class="box">
@@ -190,7 +217,6 @@ TEL:03-0000-0000<br>
 </section>
 
 </div>
--->
 <!--/sub-->
 
 </div>
